@@ -1,4 +1,4 @@
-async function editTopics(repo, names) {
+async function editTopics(repo: any, names: string[]) {
   if (!repo || !names) {
     throw new Error("Params missing.")
   }
@@ -18,7 +18,7 @@ async function editTopics(repo, names) {
   }
 }
 
-async function getOrgRepos(org) {
+async function getOrgRepos(org: string) {
   if (!org) {
     throw new Error("Params missing.")
   }
